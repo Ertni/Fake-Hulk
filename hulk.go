@@ -104,7 +104,7 @@ func main() {
 	}
 
 	if version {
-		fmt.Println("Hulk", __version__)
+		fmt.Println("C-Cyber", __version__)
 		os.Exit(0)
 	}
 
@@ -124,7 +124,25 @@ func main() {
 	}
 
 	go func() {
-		fmt.Println("-- HULK Attack Started --\n           Go!\n\n")
+		fmt.Println("--  ▄████▄      ▄████▄ ▓██   ██▓ ▄▄▄▄    ▓█████ ██▀███  
+
+▒██▀ ▀█     ▒██▀ ▀█  ▒██  ██▒▓█████▄  ▓█   ▀▓██ ▒ ██▒
+
+▒▓█    ▄    ▒▓█    ▄  ▒██ ██░▒██▒ ▄██ ▒███  ▓██ ░▄█ ▒
+
+▒▓▓▄ ▄██    ▒▓▓▄ ▄██  ░ ▐██▓░▒██░█▀   ▒▓█  ▄▒██▀▀█▄  
+
+▒ ▓███▀     ▒ ▓███▀   ░ ██▒▓░░▓█  ▀█▓▒░▒████░██▓ ▒██▒
+
+░ ░▒ ▒      ░ ░▒ ▒     ██▒▒▒ ░▒▓███▀▒░░░ ▒░ ░ ▒▓ ░▒▓░
+
+  ░  ▒        ░  ▒   ▓██ ░▒░ ▒░▒   ░ ░ ░ ░    ░▒ ░ ▒ 
+
+░           ░        ▒ ▒ ░░   ░    ░     ░    ░░   ░ 
+
+░ ░         ░ ░      ░ ░      ░      ░   ░     ░     
+
+ --\n             Go!\n\n")
 		ss := make(chan uint8, 8)
 		var (
 			err, sent int32
@@ -149,7 +167,7 @@ func main() {
 			case targetComplete:
 				sent++
 				fmt.Printf("\r%-6d of max %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
-				fmt.Println("\r-- HULK Attack Finished --       \n\n\r")
+				fmt.Println("\r-- C-Cyber Attack Finished --       \n\n\r")
 				os.Exit(0)
 			}
 		}
